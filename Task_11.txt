@@ -1,0 +1,24 @@
+using System;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a number: ");
+            int number = int.Parse(Console.ReadLine());
+
+            int[] arr1 = new int[5] { 10, 20, 20, 30, 50 };
+
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                if (number == arr1[i])                                //Checking if your entered number is in array. for that we compare number with every element of array.
+                {
+                    Console.WriteLine(number + " is in Array. ");
+                    break;
+                }
+            }
+        }
+    }
+}

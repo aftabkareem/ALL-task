@@ -1,0 +1,26 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the number of elements: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            int num1 = 0;
+            int num2 = 1;
+
+            Console.Write(num1 + " " + num2 + " ");     
+            for (int i = 2; i < number; ++i)    
+            {
+                int num3 = num1 + num2;
+                Console.Write(num3 + " ");
+                num1 = num2;
+                num2 = num3;
+            }
+
+        }
+    }
+}
+

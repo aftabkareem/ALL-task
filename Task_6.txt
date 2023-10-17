@@ -1,0 +1,29 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the number: ");                //Taking the number upto which sum will be calculated
+            int number = Convert.ToInt32(Console.ReadLine());    //Conversion of string to int variable.
+
+            if (number < 0)
+            {
+                Console.WriteLine("Please enter a valid number.");
+            }
+            else
+            {
+                int sum = 0;                                        //Initialization of sum variable.
+
+
+                for (int i = 1; i <= number; i++)                      //Loop will run from 1 to the user-entered number
+                {
+                    sum += i;                                     //Everytime when loop run the value stored in sum variable.  
+                }
+                Console.WriteLine("Sum of numbers from 1 to " + number + " = " + sum); //Printing of final sum value.
+            }
+        }
+    }
+}

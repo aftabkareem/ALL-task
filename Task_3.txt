@@ -1,0 +1,19 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the first Number: ");          //Ask the user to enter first number. It takes input as a string. 
+            double num1 = Convert.ToDouble(Console.ReadLine());  // conversion of user string value to double variable num1. Double variable allow us to add two float values also.
+
+            Console.Write("Enter the second Number: ");     
+            double num2 = Convert.ToDouble(Console.ReadLine()); 
+
+            Console.WriteLine("sum of " +num1 + " and "+num2+" is " + (num1 + num2)); // Addition of the user entered two numbers.
+
+        }
+    }
+}

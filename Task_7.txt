@@ -1,0 +1,29 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the table_no from 1 to 12: ");     //Asking the user to enter a table number which he/she wants to print
+            int table_no = Convert.ToInt32(Console.ReadLine());    //Conversion of string to int variable.
+
+            if (table_no > 0 && table_no <= 12)                     //it will check user entered table number. That should be in range specified 
+            {
+                for (int i = 1; i <= 10; i++)                      //loop will run from 1 to 10 with an increment of 1
+                {
+                    Console.WriteLine(table_no + " x " + i + " = " + (table_no * i));     //Displaying the user entered value table.
+                }
+            }
+            else
+            {
+                Console.WriteLine("Enter correct Table Number: ");
+            }
+
+        }
+
+    }
+}
+
+

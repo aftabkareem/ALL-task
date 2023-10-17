@@ -1,0 +1,20 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the number: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            double ans = 1;                                 //int datatype cannot support large number factorial. That's why double data type is used.
+            for (int i = number; i >= 1; i--)               //Factorial of any number is its multiplication with each number upto 1 and sum of the all product values.
+            {
+                ans = ans * i;
+            }
+            Console.WriteLine("Factorial of " +number+ " is " +ans);
+        }
+    }
+}
+

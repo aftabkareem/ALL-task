@@ -1,0 +1,26 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter Number: ");                  //Ask the user to enter a number. 
+            double number = Convert.ToDouble(Console.ReadLine()); // conversion of user string value to double variable which allow us to take the square of float values also.
+
+
+
+            Console.WriteLine("Square of the " + number + " is " + (number * number)); //multiplication of number by itself gives square of that number
+
+
+        }
+    }
+}
+
+
+----------or------------
+
+We can also use this Math function to calculate the square of a number.
+
+Console.WriteLine("Square of the "+ number + " is " + Math.Pow(number,2));   //Math Power function to calculate the square of the number.

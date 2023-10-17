@@ -1,0 +1,32 @@
+using System;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter Number of Rows: ");
+            int row_no = int.Parse(Console.ReadLine());
+
+            int i, j, k, spacing_counter;
+            spacing_counter = row_no - 1;
+
+            for (i = 1; i <= row_no; i++)
+            {
+                for (j = 1; j <= spacing_counter; j++)                  //first * is (Row number-1) spaces from left
+                {
+                    Console.Write(" ");
+                }
+                spacing_counter--;                                      //spaces are decreases as row number increases to zero at last row
+                for (k = 1; k <= i * 2 - 1; k++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+
+        }
+    }
+}

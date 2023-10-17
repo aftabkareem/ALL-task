@@ -1,0 +1,36 @@
+using System;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter Size of Array: ");
+            int size_OfArray = int.Parse(Console.ReadLine());
+            int[] arr = new int[size_OfArray];
+            for (int j = 1; j <= size_OfArray; j++)
+            {
+                Console.Write($"Enter Value {j}: ");
+                int num = int.Parse(Console.ReadLine());
+                arr[j - 1] = num;
+            }
+            int largest = 0;
+            int smallest = arr[0];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] > largest)
+                {
+                    largest = arr[i];
+                }
+                else if (arr[i] < smallest)
+                {
+                    smallest = arr[i];
+                }
+            }
+            Console.WriteLine($"Largest number in array is {largest}." );
+            Console.WriteLine($"Smallest number in array is {smallest}.");
+
+        }
+    }
+}

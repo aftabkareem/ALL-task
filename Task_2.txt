@@ -1,0 +1,15 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter your Name: ");              // Ask the user to enter his/her name
+            string name = Console.ReadLine();                // It's take user input and store it in a string variable
+
+            Console.WriteLine("Hello, " + "[" + name + "]");  //printing the Greeting message
+        }
+    }
+}

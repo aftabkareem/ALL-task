@@ -1,0 +1,32 @@
+using System;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the first string:");
+            string name1 = Console.ReadLine();
+            Console.Write("Enter the second string:");
+            string name2 = Console.ReadLine();
+
+
+            string subSequence = string.Empty;
+            for (int i = 0; i < name1.Length; i++)
+            {
+                for (int j = 0; j < name2.Length; j++)
+                {
+                    if (name1[i] == name2[j])
+                    {
+                        subSequence += name1[i];
+                        i += 1;
+                        break;
+                    }
+                }
+            }
+            Console.WriteLine("Longest Subsequence of " + name1 + " and " + name2 + " is " + subSequence);
+
+        }
+    }
+}

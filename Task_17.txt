@@ -1,0 +1,27 @@
+using System;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter size of Array: ");
+            int size_ofArray = int.Parse(Console.ReadLine());
+            int[] arr = new int[size_ofArray];
+            for(int i = 1; i <=size_ofArray; i++)
+            {
+                Console.Write($"Enter value{i}: ");
+                int n1=int.Parse(Console.ReadLine());
+                arr[i-1] = n1;                                              //i-1 gives zero index of array. Adding the user entered value in array.
+            }
+            Array.Sort(arr);                                                //Sorting of array in ascending order
+            Console.Write("\n");
+            Console.WriteLine("Sorted Array of Random Numbers: ");
+            for (int j = 0; j < arr.Length; j++)
+            {
+                Console.Write(arr[j] + " ");
+            }        
+        }
+    }
+}
